@@ -1,6 +1,6 @@
 # Glossary
 
-**Contract**: Primitives allowinging for building stateful applications on Fuel, facilitates complex stateful applications like AMMs, Vaults, etc.
+**Contract**: Primitives allowing for building stateful applications on Fuel, facilitates complex stateful applications like AMMs, Vaults, etc.
 
 **Context:** Provides policies that determine what features can some running FuelVM bytecode use, example the ability to call smart contracts, use persistent storage, etc.
 

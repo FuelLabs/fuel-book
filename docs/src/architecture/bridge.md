@@ -4,7 +4,7 @@ Fuel Ignition uses Ethereum as a Layer 1. We chose Ethereum as the L1 for Fuel f
 
 - Building for the long-term sustainably
 - Building with an emphasis on security
-- Gocus on consumer hardware and making it accessible for ordinary people to participate in the protocol
+- Focus on consumer hardware and making it accessible for ordinary people to participate in the protocol
 
 Ethereum is one of the most decentralized L2s. It has been around for a long time and has been working on a rollup-centric roadmap for years. This makes it the best choice for building a rollup.
 
