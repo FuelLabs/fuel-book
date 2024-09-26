@@ -8,7 +8,7 @@
   - [The Fuel Way](./why-fuel/fuel-way.md)
   - [So What is Fuel?](./why-fuel/what-is-fuel.md)
   - [Building on Fuel: An Overview](./why-fuel/building-on-fuel-overview.md)
-- [Part 2: The Architecture](./architecture/fuelvm.md)
+- [Part 2: The Architecture](./architecture/index.md)
   - [The FuelVM](./architecture/fuelvm.md)
   - [Transactions on Fuel](./architecture/transactions.md)
   - [Fuel Blocks](./architecture/blocks.md)

@@ -330,6 +330,7 @@ Before an upgrade can be performed, the fuel state transition bytecode must be u
 
 Once all subsections have been successfully uploaded, the transaction can be considered final, and then the new bytecode can be used.
 
+<!-- markdownlint-disable MD052 -->
 |        name       |    type    |                                      description                                      |
 |:-----------------:|:----------:|:-------------------------------------------------------------------------------------:|
 | root              | byte[32]   | The root of the Merkle tree is created over the bytecode.                             |
@@ -346,6 +347,7 @@ Once all subsections have been successfully uploaded, the transaction can be con
 | inputs            | Input []   | List of inputs.                                                                       |
 | outputs           | Output []  | List of outputs.                                                                      |
 | witnesses         | Witness [] | List of witnesses.                                                                    |
+<!-- markdownlint-enable MD052 -->
 
 The transaction invalidity rules for this transaction type can be seen here.
 

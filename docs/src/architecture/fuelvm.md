@@ -143,6 +143,7 @@ Call context can be created by either:
 
 Each call creates a “Call Frame”, which is pushed to the Stack. A call frame holds metadata on the stack, aiding the execution of the call context in the FuelVM. A call context cannot mutate the state of the caller and only access its own stack and heap.
 
+<!-- markdownlint-disable MD052 -->
 |          bytes          |     type    |   value  |                                  description                                  |
 |:-----------------------:|:-----------:|:--------:|:-----------------------------------------------------------------------------:|
 | Unwritable area begins. |             |          |                                                                               |
@@ -155,6 +156,7 @@ Each call creates a “Call Frame”, which is pushed to the Stack. A call frame
 | 1*                      | byte[]      | code     | Zero-padded to 8-byte alignment, but individual instructions are not aligned. |
 |  Unwritable area ends.  |             |          |                                                                               |
 | *                       |             |          | Call frame's stack.                                                           |
+<!-- markdownlint-enable MD052 -->
 
 After a call context has successfully ended, its call frame is popped from the stack. However, heap-allocated space; it persists in memory.
 
