@@ -16,4 +16,4 @@ Further Reading: At the end of each section, you’ll find recommendations for f
 
 Interactive Components: For those who prefer a more hands-on approach, we’ve included links to our online resources and community forums. Engaging with these platforms will connect you with other readers and the Fuel community.
 
-Feedback and Contributions: We encourage reader feedback! If you have suggestions or insights to share, please reach out to us here <insert link>.
+Feedback and Contributions: We encourage reader feedback! If you have suggestions or insights to share, please reach out to us here.
