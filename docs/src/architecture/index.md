@@ -1,4 +1,4 @@
-# The Arcchitecture
+# The Architecture
 
 - [The FuelVM](./fuelvm.md)
 - [Transactions on Fuel](./transactions.md)

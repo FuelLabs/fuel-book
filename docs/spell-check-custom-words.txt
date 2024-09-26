@@ -3,6 +3,7 @@ AMM
 AMMs
 Arbitrum
 AssetID
+assetID
 bal
 balanceRoot
 Bitfield
@@ -62,6 +63,8 @@ https
 IAmNickDodson
 InputContract
 inputContract
+InputContracts
+inputIndex
 inputsCount
 integrations
 interoperable
@@ -71,6 +74,7 @@ ISAs
 liveness
 LLVM
 Mainnet
+mainnet
 Mempool
 mempool
 merkelization
@@ -88,10 +92,13 @@ natively
 onboarding
 OOB
 Orchestrator
+OuputVariable
 OutputChange
 OutputCoin
 OutputContract
 outputContract
+OutputContractCreated
+OutputContracts
 outputIndex
 OutputMessage
 outputsCount
@@ -101,11 +108,13 @@ Parallelization
 parallelize
 parallelized
 param
+paramters
 pc
 performant
 permissionless
 PolicyType
 policyTypes
+Postgres
 predicateData
 predicateDataLength
 predicateGasUsed
@@ -118,6 +127,7 @@ reentrancy
 regs
 Rehydration
 rehydration
+relayers
 relayMessage
 ret
 retl
@@ -135,12 +145,14 @@ scriptGasLimit
 scriptLength
 SDK
 sendMessage
+sidechain
 sidechains
 sig
 sigs
 Solana
 Solana’s
 sp
+SRC
 ssp
 stateful
 stateRoot
@@ -152,9 +164,12 @@ Succinct’s
 SVM
 toolchain
 TPS
+TransactionCreate
+TransactionMint
 TransactionScript
 TransactionUpgrade
 TransactionUpload
+TRO
 trustless
 tx
 txID
@@ -162,6 +177,7 @@ TXPointer
 txPointer
 uint
 Unwritable
+upgradeable
 UpgradePurpose
 upgradePurpose
 UTXO
