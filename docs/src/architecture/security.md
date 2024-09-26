@@ -31,6 +31,7 @@ If a bug in the contract implementation on the L1 or L2 compromises the roll-up 
 Fuel follows the rigorous audits of its smart contracts with best-in-class security auditors in the space and also participates in bug bounties to keep the possibility of this very low. These issues become more concerning in stage 2 settings, as the stage 1 setting does allow for reverting many possible issues regarding bridge contracts.
 
 ### Layer 2 Client Bugs
+
 The Fuel execution client could have some bugs, which could be exploited to allow behavior not specified.
 
 This can lead to someone being able to create a malicious state and potentially not being challenged by a fraud-proof in case Layer 2 only has one execution client implementation, which can lead to a bug in ZK proving games based on top of it.
@@ -49,7 +50,7 @@ Application implementations often have bugs because they avoid some required che
 
 Fuel aims to avoid these by creating best-in-class support libraries in Sway, which are well-audited and tested and, hence, safe to build on. It also promotes the usage of secure patterns through developer evangelism.
 
-### Multisig Compromisation 
+### Multisig Compromisation
 
 If compromised, the security council's multi-sig can lead to severe issues, such as malicious upgrades or behavior in various parts of the stack.
 

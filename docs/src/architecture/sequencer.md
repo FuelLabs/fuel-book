@@ -5,7 +5,7 @@ This section focuses on block building in Fuel and the role that the Block Build
 The Fuel Block Builder is a component in the Fuel rollups, which is responsible for:
 
 - Processing messages from L1 → L2
-- Processing transactions in the mempool 
+- Processing transactions in the mempool
 - Building blocks and submitting them to the Layer 1
 - Providing soft-finality on the Layer 2
 
@@ -27,7 +27,6 @@ Block Builder receives relayed messages from Layer 1 emitted as L1 events. The m
 | amount    | uint64    | The amount of the base asset transfer                        |
 | data      | byte[]    | Arbitrary message data                                       |
 
-
 The block builder creates an output of type OutputMessage, and after this output is created, the processing of this message can be considered done.
 
 Then, applications can leverage these OutputMessage(s) as they see fit. One example is the deposit process, where the bridge contract mints new ETH on the L2 after receiving specific messages that prove deposits on the L1 (we will discuss this further in the next section).
@@ -43,7 +42,6 @@ The Fuel transactions sent from L1 are emitted as events via the L1 and have the
 | nonce                  | bytes[32] | Unique identifier of the transaction assigned by the L1 contract   |
 | max_gas                | uint64    | The maximum amount of gas allowed to use on Fuel Blockchain        |
 | serialized_transaction | byte[]    | The serialized transaction bytes following canonical serialization |
-
 
 Forced inclusion allows processing of all transaction types except Mint, which can only be created by the Fuel Block Builder. This exception in no way restricts security guarantees for users' censorship resistance.
 
@@ -67,10 +65,9 @@ This allows clever batching and compression techniques (gzip or zstd) to give us
 
 Another advantage of sending transactions directly to the Block Builder is getting faster soft finality on the L2. For a transaction sent via L1 to be processed, first, the L1 block has to be finalized.
 
-
 ## Block Building and Proposing
 
-The Fuel Block Builder is required to bundle transactions into blocks and propose them to Layer 1 as part of processing transactions. Committed blocks on Fuel have a  “Challenge Window,” which, when complete, allows the block and its corresponding state to be considered to have achieved “L1 finality.” 
+The Fuel Block Builder is required to bundle transactions into blocks and propose them to Layer 1 as part of processing transactions. Committed blocks on Fuel have a  “Challenge Window,” which, when complete, allows the block and its corresponding state to be considered to have achieved “L1 finality.”
 
 The Fuel Block Builder currently sends the block hash and block height as new updates to the on-chain message portal, along with blobs containing transactions and other data,  to provide DA for that specific block.
 

@@ -6,13 +6,13 @@ In Fuel, addresses can own native assets and then spend these coins with transac
 
 In Fuel, transactions fall under five categories determined by the operation they are performing in the blockchain:
 
-1. Script 
+1. Script
 2. Create
 3. Mint
 4. Upgrade
 5. Upload
 
-The Fuel follows the UTXO model for its transactions, because of which it has some constructs that we will discuss before we dive deeper into the various types of transactions: 
+The Fuel follows the UTXO model for its transactions, because of which it has some constructs that we will discuss before we dive deeper into the various types of transactions:
 
 - Inputs
 - Script
@@ -55,14 +55,14 @@ An Input Coin has the following parameters attached to it:
 | predicate           | byte[] | Predicate bytecode.                                 |
 | predicateData       | byte[] | Predicate input data (parameters).                  |
 
-
 The transaction invalidity rules for this input type can be seen here.
 
 ### Contracts
 
-One question frequently arises with the UTXO model is how to achieve smart contracts beyond ephemeral scripts; 
+One question frequently arises with the UTXO model is how to achieve smart contracts beyond ephemeral scripts;
 
 One of the issues with Bitcoin is lack of complex smart contract feature, expanding a little bit more on this, the core issue arrives because of the following:
+
 - Bitcoin script is not turning complete, which means you cannot do things like loops inside bitcoin
 - Bitcoin doesn’t support persistent storage for bitcoin script being run in the transaction, which limits what u can do with Bitcoin
 
@@ -162,7 +162,7 @@ The transaction invalidity rules for this output type can be seen here.
 
 OutputContracts are new contract outputs that can then be used as InputContracts for a specific contract ID in the next transaction that uses this contract as an Input. They contain the newly updated index, balanceRoot, and stateRoot of the contract after being processed as part of the transaction.
 
-**Note:** Every InputContract that is part of the transaction, always needs to have a corresponding Output Contract. 
+**Note:** Every InputContract that is part of the transaction, always needs to have a corresponding Output Contract.
 
 |     name    |   type   |                               description                              | OutputVariable         |
 |:-----------:|:--------:|:----------------------------------------------------------------------:|------------------------|
@@ -264,6 +264,7 @@ The transaction's script can compute arbitrary amounts and call other contracts.
 **Note:** It is important to note that a script transaction cannot create a contract and hence cannot have output of type ContractCreated. Other transaction invalidity rules can be viewed here.
 
 ## TransactionCreate
+
 TransactionCreate is used to create new Contracts; the parameters allow for contracts with initialized storage slots.
 
 The contract ID of smart contracts on Fuel is calculated deterministically, and the calculation mechanism is referred to here.
@@ -305,6 +306,7 @@ The transaction invalidity rules for this transaction type can be seen here.
 The Fuel network has some consensus parameters that can be upgraded occasionally; the state transition function of the Fuel network is stored on-chain and hence can be upgraded by privileged addresses.
 
 Hence, at TransactionUpgrade at any given instance, could be attempting to do any of the following:
+
 - Trying to upgrade the consensus parameters
 - Trying to upgrade the state transition function
 

@@ -12,7 +12,7 @@ Ethereum is one of the most decentralized L2s. It has been around for a long tim
 
 Fuel Ignition, Fuel’s flagship rollup, inherits Ethereum’s security. The natural question from the previous statement is, what do we mean by Inheriting Ethereum’s security?
 
-Fuel uses Ethereum as the layer to keep users’ funds and propose its latest blocks and corresponding state updates. We deploy smart contracts that continuously get updates of Fuel Layer 2. 
+Fuel uses Ethereum as the layer to keep users’ funds and propose its latest blocks and corresponding state updates. We deploy smart contracts that continuously get updates of Fuel Layer 2.
 
 Then, we have fraud-proving performed directly on the Ethereum L1 to prove that something about the posted blocks or related state updates is wrong. We also allow permissionless messaging and transaction inclusion via the L1 to ensure the user doesn’t experience any censorship resistance.
 
@@ -82,7 +82,7 @@ Hybrid proving is being developed, and prototyping is done with RISC-V-based zkV
 
 ### Alt-DAs and L1s
 
-We have launched our flagship rollup with Eth as our L1 for settlement and data availability, but Fuel believes in creating a neutral and modular tech stack. The Fuel tech stack can be extended to launch on alt L1s like Bitcoin and Solana and with alt DAs like Celestia and Avail. If someone wants, they can even use the Fuel stack to launch their L1. 
+We have launched our flagship rollup with Eth as our L1 for settlement and data availability, but Fuel believes in creating a neutral and modular tech stack. The Fuel tech stack can be extended to launch on alt L1s like Bitcoin and Solana and with alt DAs like Celestia and Avail. If someone wants, they can even use the Fuel stack to launch their L1.
 
 We will keep progressing our tech stack to be adaptable in multiple scenarios, resilient, and feasible on consumer-grade hardware.
 

@@ -10,7 +10,6 @@ A Fuel block header at the top consists of 3 fields:
 - Consensus Header
 - Block Header Metadata
 
-
 ```c++
 pub struct BlockHeaderV1 {
 
@@ -43,21 +42,21 @@ pub struct ApplicationHeader<Generated> {
 }
 ```
 
-**da_height**
+#### da_height
 
 The da_height field records the latest block L1 block until the messages sent from the L1->L2 have been processed; this is helpful later on in fraud proving to establish that a particular message was sent from the L1 to the L2 rollup but wasn’t processed as part of the block that included the messages up to the block of which it was part.
 
-**consensus_parameters_version**
+#### consensus_parameters_version
 
 The fuel rollup has a set of upgradeable consensus parameters, which can be upgraded via Transactions of type Upgrade. For each upgrade to these consensus parameters, a new version for consensus_paramters_version has to be assigned, which helps us keep track of which set of consensus parameters we are using while building a particular block.
 
-**state_transition_bytecode_version**
+#### state_transition_bytecode_version
 
 The Fuel rollups keep the WASM compiled bytecode of their state transition function as part of the chain; this facilitates forkless upgrades for the Fuel rollups.
 
 The new state transition function is uploaded via the Upload transactions, while the upgrade is done via the Upgrade transactions. Each upgrade updates the state_transition_bytecode_version, and this version helps keep track of which state transition function is being used to process transactions for a given block.
 
-**generated**
+#### generated
 
 The section contains various rollup-specific fields around execution for a specific block. The Fuel flagship rollup has the following fields for generated:
 
@@ -86,7 +85,6 @@ pub struct GeneratedConsensusFields {
     pub application_hash: Bytes32,
 }
 ```
-
 
 ### Block Header Metadata
 

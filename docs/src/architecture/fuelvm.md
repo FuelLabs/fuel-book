@@ -10,7 +10,7 @@ In the following sections, we will discuss the key features of the FuelVM in det
 
 Fuel’s parallelized transaction execution model is a cornerstone of its efficiency and scalability. Parallelization dramatically improves throughput and reduces latency compared to traditional sequential processing methods. It allows tasks to be broken down into smaller sub-tasks that can be executed simultaneously on multiple processing units.
 Parallelization is built upon a foundation of Access Lists and the UTXO (Unspent Transaction Output) model, which works in tandem to enable concurrent processing of non-conflicting transactions.
-In other words, Fuel leverages the UTXO model for performing transactions on Fuel, anything be it from a token transfer, to a smart contract call, all are done via the transactions that are modelled via UTXOs. 
+In other words, Fuel leverages the UTXO model for performing transactions on Fuel, anything be it from a token transfer, to a smart contract call, all are done via the transactions that are modelled via UTXOs.
 
 This means that addresses on Fuel own unspent coins, which they can spend to conduct transactions via the FuelVM.
 
@@ -46,11 +46,12 @@ The FuelVM has 64 registers, each 8 bytes, of which 16 are reserved and are 6 bi
 ## The FuelVM Instruction Set
 
 The FuelVM instructions are 4 bytes wide and have the following structure:
+
 - Opcode: 8 bits
 - Register Identifier: 6 bits
 - Immediate value: 12, 18, or 24 bits, depending on the operation.
 
-The FuelVM instruction set has been documented in detail here: https://docs.fuel.network/docs/specs/fuel-vm/instruction-set.
+The FuelVM instruction set has been documented in detail here: <https://docs.fuel.network/docs/specs/fuel-vm/instruction-set>.
 
 ## Memory
 
@@ -61,6 +62,7 @@ Memory has a stack and a heap model. The stack starts from the left, after the i
 Each byte allocation on the Stack increases the stack index by 1, and each byte allocation on the heap decreases its writable index by 1. Hence, the stack grows upwards, and the heap grows downwards.
 
 The stack and the heap have the following essential registers associated with them:
+
 - $ssp ( 0x05 ): Memory address of bottom of the current writable stack area.
 - $sp ( 0x06 ): Memory address on top of current writable stack area (points to free memory).
 - $hp ( 0x07 ): Memory address below the current bottom of the heap (points to used/OOB memory).
@@ -93,7 +95,7 @@ This gives Fuel the ability to support interesting features like Multi-calls, th
 
 ### Contracts
 
-Fuel provides support for smart contracts in its UTXO model. Contracts are stateful and can be called other contracts. In Fuel Smart contracts are representative by InputContract type, you can refer more to the section on InputContract to know further. 
+Fuel provides support for smart contracts in its UTXO model. Contracts are stateful and can be called other contracts. In Fuel Smart contracts are representative by InputContract type, you can refer more to the section on InputContract to know further.
 
 The first call to a contract in a transaction has to be made via a script, and then the contract can call other contracts.
 
@@ -141,7 +143,6 @@ Call context can be created by either:
 
 Each call creates a “Call Frame”, which is pushed to the Stack. A call frame holds metadata on the stack, aiding the execution of the call context in the FuelVM. A call context cannot mutate the state of the caller and only access its own stack and heap.
 
-
 |          bytes          |     type    |   value  |                                  description                                  |
 |:-----------------------:|:-----------:|:--------:|:-----------------------------------------------------------------------------:|
 | Unwritable area begins. |             |          |                                                                               |
@@ -173,9 +174,9 @@ Now, what do we mean by the highest ever $sp?
 
 Since the stack can be grown and shrunk in size, it is possible that during the execution of some context, the $sp went until, for example, index 1000, but then elements were popped out of the stack, and now the current $sp is 900. In this scenario, the highest ever $sp during the execution of this call context is 1000, and hence, the memory region until 1000 is readable for the stack!
 
-### Write Policies for Context.
+### Write Policies for Context
 
-A given context can write to any region between its $ssp and current $hp; hence, that region of memory can be allocated and used for writing data. 
+A given context can write to any region between its $ssp and current $hp; hence, that region of memory can be allocated and used for writing data.
 
 Before writing to this memory region, the bytes have to be allocated first. In the case of a stack, this is done using CFE and CFEI opcodes, while in the case of the heap, it is done via an ALOC opcode.
 
@@ -193,7 +194,6 @@ The VM can be configured by setting the following parameters:
 | VM_MAX_RAM            | uint64 | 2**26 | 64 MiB.                                 |
 | MESSAGE_MAX_DATA_SIZE | uint64 |       | Maximum size of message data, in bytes. |
 
-
 ### VM Initialization
 
 This section describes what happens during the VM initialization for each VM run.
@@ -208,12 +208,13 @@ To initialize the VM, the following is pushed on the stack sequentially:
 5. The transaction, serialized.
 
 Then, the following registers are initialized (without explicit initialization, all registers are initialized to zero):
+
 1. $ssp = 32 + 32 + MAX_INPUTS*(32+8) + size(tx)): the writable stack area starts immediately after the serialized transaction in memory (see above).
 2. $sp = $ssp: writable stack area is empty to start.
 3. $hp = VM_MAX_RAM: the heap area begins at the top and is empty to start.
 
 ## Further Readings
 
-- Nick Dodson’s tweet on what makes FuelVM unique: https://x.com/IAmNickDodson/status/1542516357886988288
-- Blockchain Capital’s blog on FuelVM and Sway: https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159
-- UTXO Mode by River.com: https://river.com/learn/bitcoins-utxo-model/
+- Nick Dodson’s tweet on what makes FuelVM unique: <https://x.com/IAmNickDodson/status/1542516357886988288>
+- Blockchain Capital’s blog on FuelVM and Sway: <https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159>
+- UTXO Mode by River.com: <https://river.com/learn/bitcoins-utxo-model/>

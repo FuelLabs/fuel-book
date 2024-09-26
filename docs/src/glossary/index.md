@@ -2,7 +2,7 @@
 
 **Contract**: Primitives allowinging for building stateful applications on Fuel, facilitates complex stateful applications like AMMs, Vaults, etc.
 
-**Context:** Provides policies that determine what features can some running FuelVM bytecode use, example the ability to call smart contracts, use persistent storage, etc. 
+**Context:** Provides policies that determine what features can some running FuelVM bytecode use, example the ability to call smart contracts, use persistent storage, etc.
 
 **Cryptography:** The practice of securing information and communications through mathematical techniques, ensuring data confidentiality, integrity, and authenticity in blockchain systems.
 
@@ -39,14 +39,14 @@
 **Predicate:** A stateless smart account that allows transactions to execute in parallel without conflict.
 
 **Rollup:** A Layer 2 scaling solution that batches multiple transactions into a single one and processes them off-chain, while still ensuring security and finality on the Layer 1 blockchain.
- 
+
 **Scalability:** The capability of a blockchain to handle an increasing number of transactions or users without compromising performance, security, or decentralization.
 
 **Script:** Entrypoint for fuel transactions which dictates what happens as part of a Fuel transaction.
 
 **State:** All the data a blockchain needs to store and maintain.
 
-**State Rehydration:** 
+**State Rehydration:**
 
 **State Tree:** A data structure used in blockchains to represent the current state of all accounts, smart contracts, and their balances. It allows for efficient storage and retrieval of state information, often enabling quick verification and updates during transaction processing.
 
@@ -54,7 +54,7 @@
 
 **Throughput:** The number of transactions a blockchain can process within a given time frame, often measured in transactions per second (TPS).
 
-**Unspent Transaction Output (UTXO):** The model used for tracking asset ownership, contracts, messages and transactions, 
+**Unspent Transaction Output (UTXO):** The model used for tracking asset ownership, contracts, messages and transactions,
 
 **Virtual Machine (VM):** An environment that executes smart contracts on a blockchain, enabling developers to run code in a decentralized manner without needing to interact with the underlying hardware.
 

@@ -1,12 +1,12 @@
 # Introduction
 
-Welcome to the Fuel Book, your comprehensive guide to the Fuel network. This book serves not only as a reference but also our motivations for building Fuel and the philosophies we have incorporated into it. 
+Welcome to the Fuel Book, your comprehensive guide to the Fuel network. This book serves not only as a reference but also our motivations for building Fuel and the philosophies we have incorporated into it.
 
-Our main goal with this book is to dive deeper into the "why" behind Fuel, moving beyond just the technicalities to explore the foundational philosophies and inspirations that have guided our work. 
+Our main goal with this book is to dive deeper into the "why" behind Fuel, moving beyond just the technicalities to explore the foundational philosophies and inspirations that have guided our work.
 
 We recognize that our audience encompasses developers, researchers, and blockchain enthusiasts. To make it easier for you to find relevant information, we have structured the book with specific sections tailored to different user needs:
 
-**Table of Contents:** Quickly locate specific sections of interest. 
+**Table of Contents:** Quickly locate specific sections of interest.
 
 **Key Terms and Glossary:** Throughout the book, you will come across terminology unique to the Fuel ecosystem and blockchain. To support your understanding, we’ve included a glossary at the end of the book.
 

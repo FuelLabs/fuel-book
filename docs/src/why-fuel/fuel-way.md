@@ -1,12 +1,12 @@
 # The Fuel Way
 
-Since Ethereum launched, blockchains have largely iterated in the same direction. 
+Since Ethereum launched, blockchains have largely iterated in the same direction.
 
 Each subsequent chain has presented itself as faster, more scalable, more powerful and more usable. These chains have implemented new consensus mechanisms, new databases, and new ZK proving mechanisms.
 
 Yet the overall system stays roughly the same: developers build smart contracts for their applications and assets (typically in Solidity or Rust). Users connect to a centralized server to read data from the chain, and interact with the chain by signing messages with a standard private-key and sending them back to the same centralized server.
 
-Fuel takes a different approach. We believe the blockchain industry needs a new direction– one focused on decentralization, one built the Fuel way. 
+Fuel takes a different approach. We believe the blockchain industry needs a new direction– one focused on decentralization, one built the Fuel way.
 
 ## Decentralized… Sustainably Decentralized
 
