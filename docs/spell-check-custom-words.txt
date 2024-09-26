@@ -4,11 +4,13 @@ AMMs
 Arbitrum
 AssetID
 assetID
+assetId
 bal
 balanceRoot
 Bitfield
 Blockchain
 blockchain
+blockchain's
 blockchains
 Blockchains
 blockchain’s
@@ -39,6 +41,7 @@ DAs
 dataLength
 depositEth
 deterministically
+DEX
 DSL
 EIP
 entrypoint
@@ -46,7 +49,6 @@ ETH
 Eth
 eth
 Ethereum
-Ethereum’s
 Ethereum's
 ETHResearch
 EVM
@@ -66,6 +68,7 @@ InputContract
 inputContract
 InputContracts
 inputIndex
+InputMessage
 inputsCount
 integrations
 interoperable
@@ -151,7 +154,7 @@ sidechains
 sig
 sigs
 Solana
-Solana’s
+Solana's
 sp
 SRC
 ssp
@@ -161,6 +164,7 @@ storageSlots
 storageSlotsCount
 subsectionIndex
 subsectionsNumber
+Succinct's
 Succinct’s
 SVM
 toolchain
@@ -181,6 +185,7 @@ Unwritable
 upgradeable
 UpgradePurpose
 upgradePurpose
+USDC
 UTXO
 utxo
 UTXOs
@@ -198,7 +203,3 @@ zk
 ZK
 zkVMs
 zstd
-DEX
-USDC
-assetId
-InputMessage
