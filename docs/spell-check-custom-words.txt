@@ -47,6 +47,7 @@ Eth
 eth
 Ethereum
 Ethereum’s
+Ethereum's
 ETHResearch
 EVM
 Forc
@@ -197,3 +198,7 @@ zk
 ZK
 zkVMs
 zstd
+DEX
+USDC
+assetId
+InputMessage
