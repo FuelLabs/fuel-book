@@ -1,6 +1,6 @@
 # Building on Fuel: An Overview
 
-Building on Fuel empowers developers to create high-performance, scalable decentralized applications with cutting-edge tools and infrastructure. Fuel’s architecture prioritizes speed, security, and developer productivity. This section outlines the core components of the Fuel ecosystem. We will explore each component in further detail in Part 2.
+Building on Fuel empowers developers to create high-performance, scalable decentralized applications with cutting-edge tools and infrastructure. Fuel’s architecture prioritizes speed, security, and developer productivity. This section outlines the core components of the Fuel ecosystem. We will explore each component in further detail in [Part 2](../architecture/index.md).
 
 ## The FuelVM (Fuel Virtual Machine)
 
@@ -8,7 +8,7 @@ The FuelVM incorporates years of blockchain design to bring the Ethereum communi
 
 The FuelVM draws on a variety of architectures, including RISC-V, ARM ISAs, Bitcoin scripts, and the Ethereum Virtual Machine, to create a low-level execution environment optimized for blockchain use cases. By offering state-minimized facilities like native assets, ephemeral scripting, and spending conditions, it reduces the load on full nodes, improving network sustainability. Developers can avoid the inefficiencies of traditional state-heavy designs and build applications that deliver high performance while keeping the network decentralized and accessible.
 
-As of May 2024, the FuelVM can achieve asset transfer benchmarks of 12,000 transactions per second (TPS) per core on high-end CPUs, offering unparalleled speed for modern blockchain applications.
+As of May 2024, the FuelVM can achieve asset transfer benchmarks of 21,000 transactions per second (TPS) per core on high-end CPUs, offering unparalleled speed for modern blockchain applications.
 
 ## The Fuel Transaction Architecture
 
@@ -26,15 +26,15 @@ Ignition’s focus on leveraging Ethereum’s security ensures that developers c
 
 ## The Fuel Network
 
-Fuel operates as a network of interconnected rollups, designed to offer seamless interaction between different blockchains and rollups. Fuel’s architecture allows projects to decentralize block production through its proposed design for a shared sequencing and builder network. This will provide developers with a fair and efficient way to manage transaction inclusion and interoperation between Fuel rollups.
+Fuel operates as a network of interconnected rollups, designed to offer seamless interaction between different blockchains and rollups. Fuel rollups diverge from the copy-paste approach common in many rollup networks. Fuel's customizable VM configurations enable tailoring each network blockchain to developers' specific needs, enhancing adaptability across diverse use cases. Combined with its decentralized block production model, enabled by a shared sequencing and builder network, Fuel provides a fair and efficient system for managing transaction inclusion and interoperation between rollups.
 
 ## Developer Tooling
 
-The Fuel project realized early on the importance of thoughtful and considerate developer tooling. We believe developer time is one of the most important assets we have in our community and it should be optimized for building high value code. In order to make developers maximally productive and build the best possible future proof applications, we built our own suite of tools. These tools make it easy to build, test, and deploy decentralized applications, allowing developers to focus on innovation.
+The Fuel project realized early on the importance of thoughtful and considerate developer tooling. We consider developer time one of our community's most important assets and aim to optimize it for building high-value code. To maximize developer productivity and enable the creation of future-proof applications, we created our own suite of tools. These tools streamline building, testing, and deploying decentralized applications, freeing developers to focus on innovation.
 
 **Sway:** Sway is a domain specific language (DSL) for modern blockchain programming which has familiar syntax, grammar and design ideology to Rust while incorporating blockchain specific functionality such as smart contract interface concepts. Sway is inherently designed to save developers time by providing a single programming language for constructing all critical blockchain application components such as: predicates, scripts, smart contracts, libraries, testing, deployment scripting, indexing and more.
 
-Why not Rust or Solidity? Rust is primarily designed to be a systems language which is heavily bonded to the LLVM toolchain and is not designed for the special considerations of blockchain development. Solidity, while being a powerful language for developing on the Ethereum Virtual Machine, has many known short-comings as a language. Sway aims to incorporate the best of both of these languages to bring developers a both familiar and powerful programming language for blockchain development.
+Why not Rust or Solidity? Rust, primarily designed as a systems language, heavily bonds to the Low Level Virtual Machine (LLVM) toolchain and lacks focus on the special considerations of blockchain development. Solidity, a powerful language for developing on the Ethereum Virtual Machine, has many known shortcomings. Sway aims to combine the best aspects of both languages, offering developers a familiar yet powerful tool for blockchain development.
 
 Other tools include:
 
@@ -44,4 +44,4 @@ Other tools include:
 
 - **Fuel Wallet SDK:** The Fuel Wallet SDK provides developers with the tools to create secure, user-friendly wallets that natively interact with the Fuel ecosystem. It ensures developers can easily build wallets that integrate into decentralized applications.
 
-- **Fuel Typescript SDK:** The Typescript SDK allows developers to integrate Fuel into web applications. It simplifies interaction with the Fuel blockchain, making it easy for frontend developers to build decentralized applications that interact with Fuel’s infrastructure.
+- **Fuel Typescript SDK:** The Typescript SDK allows developers to integrate Fuel into web applications, simplifying interaction with the Fuel blockchain and enabling frontend developers to build decentralized applications that connect with Fuel’s infrastructure.
