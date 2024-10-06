@@ -301,7 +301,7 @@ The witness is a parameter attached to transactions. The block builders fill in 
 
 Witnesses are not part of the transaction ID, which allows someone to sign over a transaction and provide it as part of the transaction.
 
-**NOTE:** The protocol doesn't limit witnesses to providing signatures only; they serve to fill in any data and enable various interesting use cases, like [State Rehydration](../roadmap/state-rehydration.md).
+**NOTE:** The protocol doesn't limit witnesses to providing signatures only; they serve to fill in any data and enable various interesting use cases, like [State Rehydration](../fuels-future/state-rehydration.md).
 
 Each witness contains a byte array data along with the field dataLength helping know the length of this data.
 
