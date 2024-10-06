@@ -1,6 +1,7 @@
 # The FuelVM
 
 Highlights:
+
 - The FuelVM serves as the core of the Fuel stack, informed by insights from various virtual machine designs like the EVM and Solana's SVM.
 
 - It supports state-minimized application development through features such as native assets and ephemeral scripting, promoting decentralized and accessible architecture.
@@ -36,7 +37,7 @@ Using the UTXO model helps achieve transaction parallelization. At runtime, user
 
 The FuelVM operates as a register-based virtual machine, unlike the EVM and many others, which use a stack-based architecture.
 
-Register-based virtual machines consistently outperform stack-based virtual machines. 
+Register-based virtual machines consistently outperform stack-based virtual machines.
 
 The FuelVM includes 64 registers, each 8 bytes, with 16 reserved and 6-bit addressable.
 
@@ -120,7 +121,7 @@ This enables Fuel to natively support advanced features such as multi-calls, con
 
 ### Contracts
 
-Fuel provides support for smart contracts in its UTXO model. Smart contracts are stateful and can be called by other contracts. In Fuel, smart contracts are represented by the `InputContract` type. To learn more, refer to the section on InputContract. 
+Fuel provides support for smart contracts in its UTXO model. Smart contracts are stateful and can be called by other contracts. In Fuel, smart contracts are represented by the `InputContract` type. To learn more, refer to the section on InputContract.
 
 The first call to a contract in a transaction occurs through a script, after which the contract can call other contracts.
 
@@ -189,6 +190,7 @@ After verifying all predicates, the transaction script is executed; the script e
 Call contexts execute contracts, offering flexibility, storing data persistently, and making contract calls.
 
 Call context is created by either:
+
 1. Script calling a smart contract
 2. Contract calling a contract input
 
@@ -247,7 +249,7 @@ Since the stack can be grown and shrunk in size, it is possible that during the 
 
 ### Write Policies for Context
 
-A given context can write to any region between its `$ssp` and current `$hp`; hence, that memory region can be allocated and used for writing data. 
+A given context can write to any region between its `$ssp` and current `$hp`; hence, that memory region can be allocated and used for writing data.
 
 Before writing to this memory region, allocate the bytes first. In the case of a stack, this is done using `CFE` and `CFEI` opcodes, while in the case of the heap, it is done via `an ALOC` opcode.
 
@@ -284,9 +286,9 @@ To initialize the VM, the following pushes to the stack sequentially:
 2. Base asset ID (byte[32], word-aligned)
 
 3. [MAX_INPUTS](https://docs.fuel.network/docs/specs/tx-format/consensus_parameters/) pairs of (asset_id: byte[32], balance: uint64), of:
-    
+
     1. For [predicate estimation](https://docs.fuel.network/docs/specs/fuel-vm/#predicate-estimation) and [predicate verification](https://docs.fuel.network/docs/specs/fuel-vm/#predicate-verification), zeroes.
-    
+
     2. For [script execution](https://docs.fuel.network/docs/specs/fuel-vm/#script-execution), the free balance for each asset ID seen in the transaction's inputs is ordered in ascending order. If there are fewer than MAX_INPUTS asset IDs, the pair has a zero value.
 
 4. Transaction length, in bytes (uint64, word-aligned).

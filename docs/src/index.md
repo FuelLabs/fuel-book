@@ -6,7 +6,7 @@ Our main goal is to dive deeper into the "why" behind Fuel, moving beyond just t
 
 We recognize that our audience encompasses developers, researchers, and blockchain enthusiasts. We’ve made it easier to find relevant information, and structured the book with specific sections tailored to different user needs:
 
-**Table of Contents:** Quickly locate specific sections of interest. 
+**Table of Contents:** Quickly locate specific sections of interest.
 
 **Key Terms and Glossary:** Throughout the book, you will come across terminology unique to the Fuel ecosystem and blockchain, so we included a glossary at the end.
 

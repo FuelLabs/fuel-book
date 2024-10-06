@@ -18,12 +18,11 @@ The Fuel Block Builder is a component in Fuel rollups, which is responsible for:
 
 - Processing messages from L1 → L2
 
-- Processing transactions in the mempool 
+- Processing transactions in the mempool
 
 - Building blocks and submitting them to the Layer 1
 
 - Providing soft-finality on the Layer 2
-
 
 ## L1 → L2 processing
 
@@ -77,13 +76,13 @@ Fuel blocks are subject to later challenges. If it's proven that a specific mess
 
 Apart from processing messages and transactions from L1 → L2, the Block Builder is responsible for processing transactions sent to it locally. Users can send transactions to the Block Builder locally, collected in its Mempool, and then processed and sent to Layer 1.
 
-By using clever batching and compression techniques (gzip or zstd) this system offers users lower transaction costs compared to direct Layer 1 submissions. 
+By using clever batching and compression techniques (gzip or zstd) this system offers users lower transaction costs compared to direct Layer 1 submissions.
 
 Another advantage of sending transactions directly to the Block Builder is getting faster soft finality on the L2. For a transaction sent via L1 to be processed, the L1 block must be finalized first.
 
 ## Block Building and Proposing
 
-The Fuel Block Builder is required to bundle transactions into blocks and propose them to Layer 1 as part of processing transactions. Committed blocks on Fuel enter a ['Challenge Window'](./fuel-and-ethereum.md#challenge-window) after commitment. Once this window closes, the block and its corresponding state are considered to have reached 'L1 finality'. 
+The Fuel Block Builder is required to bundle transactions into blocks and propose them to Layer 1 as part of processing transactions. Committed blocks on Fuel enter a ['Challenge Window'](./fuel-and-ethereum.md#challenge-window) after commitment. Once this window closes, the block and its corresponding state are considered to have reached 'L1 finality'.
 
 Fuel Block Builder currently sends the block hash and block height as new updates to the onchain message portal, along with blobs containing transactions and other data,  to provide DA for that specific block.
 
@@ -97,7 +96,7 @@ The current Fuel Block Builder decides the priority of a transaction by sorting 
 
 ## Soft Finality
 
-The Block Builder also plays a major role in providing soft finality for L2 transactions. As an L2 participant, you can choose the level of finality at which you're comfortable making business decisions. 
+The Block Builder also plays a major role in providing soft finality for L2 transactions. As an L2 participant, you can choose the level of finality at which you're comfortable making business decisions.
 
 When the Block Builder orders and processes your transaction, it provides a soft finality. This can be considered confirmed unless the Block Builder fails to finalize it on L1.
 

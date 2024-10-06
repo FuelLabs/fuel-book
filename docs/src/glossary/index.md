@@ -2,7 +2,7 @@
 
 **Contract:** Primitives allowing for building stateful applications on Fuel, facilitates complex stateful applications like AMMs, Vaults, etc.
 
-**Context:** Provides policies that determine what features can some running FuelVM bytecode use, for example the ability to call smart contracts, use persistent storage, etc. 
+**Context:** Provides policies that determine what features can some running FuelVM bytecode use, for example the ability to call smart contracts, use persistent storage, etc.
 
 **Cryptography:** The practice of securing information and communications through mathematical techniques, ensuring data confidentiality, integrity, and authenticity in blockchain systems.
 
@@ -40,10 +40,10 @@
 
 **Predicate:** A stateless smart account that allows transactions to execute in parallel without conflict.
 
-**Proposer-Builder Separation (PBS):** Proposer-builder separation (PBS) is an Ethereum concept designed to enhance network scalability and security by splitting block building responsibilities into two distinct roles: block proposers and block builders. 
+**Proposer-Builder Separation (PBS):** Proposer-builder separation (PBS) is an Ethereum concept designed to enhance network scalability and security by splitting block building responsibilities into two distinct roles: block proposers and block builders.
 
 **Rollup:** A Layer 2 scaling solution that batches multiple transactions into a single one and processes them off-chain, while still ensuring security and finality on the Layer 1 blockchain.
- 
+
 **Scalability:** The capability of a blockchain to handle an increasing number of transactions or users without compromising performance, security, or decentralization.
 
 **Script:** Entrypoint for fuel transactions which dictates what happens as part of a Fuel transaction.

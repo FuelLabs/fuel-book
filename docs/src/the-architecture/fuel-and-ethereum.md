@@ -18,7 +18,7 @@ Fuel Ignition uses Ethereum as a Layer 1. We chose Ethereum as Fuel’s L1 for b
 
 - Building with an emphasis on security
 
-- Focus on consumer hardware and making participation in the protocol accessible  for ordinary people 
+- Focus on consumer hardware and making participation in the protocol accessible  for ordinary people
 
 Ethereum is one of the most decentralized L2s. Ethereum has a long-standing presence and has focused on a rollup-centric roadmap for years. These factors make it the ideal foundation for building a rollup.
 
@@ -35,7 +35,7 @@ Ethereum is one of the most decentralized L2s. Ethereum has a long-standing pres
 
 Fuel’s flagship rollup, Ignition, inherits Ethereum’s security. The natural question from the previous statement is, what do we mean by inheriting Ethereum’s security?
 
-Fuel uses Ethereum as the layer to keep users’ funds and propose its latest blocks and corresponding state updates. We deploy smart contracts that continuously get updates of Fuel Layer 2. 
+Fuel uses Ethereum as the layer to keep users’ funds and propose its latest blocks and corresponding state updates. We deploy smart contracts that continuously get updates of Fuel Layer 2.
 
 Then, we have fraud-proving performed directly on the Ethereum L1 to prove that something about the posted blocks or related state updates is wrong. We also allow permissionless messaging and transaction inclusion via the L1 to ensure the user doesn’t experience any censorship resistance.
 
@@ -45,7 +45,7 @@ This gives the user guarantees that as long as Ethereum is secure and the honest
 - Their funds are always safe on the Layer 1
 - They can never be stopped from withdrawing them or being able to send any transaction to the L2 (forced inclusion)
 
-Now, we will discuss each of the properties we described above. 
+Now, we will discuss each of the properties we described above.
 
 ## Messaging
 
@@ -123,7 +123,7 @@ Hybrid proving is being developed, and prototyping is done with RISC-V-based zkV
 
 ### Alt-DAs and L1s
 
-We have launched our flagship rollup with Eth as our L1 for settlement and data availability, but Fuel believes in creating a neutral and modular tech stack. The Fuel tech stack can be extended to launch on alt L1s like Bitcoin and Solana and with alt DAs like Celestia and Avail. If someone wants, they can even use the Fuel stack to launch their L1. 
+We have launched our flagship rollup with Eth as our L1 for settlement and data availability, but Fuel believes in creating a neutral and modular tech stack. The Fuel tech stack can be extended to launch on alt L1s like Bitcoin and Solana and with alt DAs like Celestia and Avail. If someone wants, they can even use the Fuel stack to launch their L1.
 
 We will keep progressing our tech stack to be adaptable in multiple scenarios, resilient, and feasible on consumer-grade hardware.
 

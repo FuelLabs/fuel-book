@@ -14,7 +14,6 @@ Highlights:
 
 Blocks in Fuel are built by entities called Block Builders. Fuel blocks are made by processing transactions and messages. Transactions can be sent directly to the builder or via layer 1, while messages are sent from layer 1. In the Fuel and Ethereum section of the book, we expand further on messages and transactions sent from the L1.
 
-
 ## Block Header
 
 A Fuel block header at the top consists of three fields:

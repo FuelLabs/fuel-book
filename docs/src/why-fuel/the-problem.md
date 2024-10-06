@@ -24,7 +24,6 @@ Fuel addresses these issues by adopting the UTXO model instead of Ethereum’s a
 
 Fuel's architecture introduces stateless primitives called predicates, enhancing efficiency and simplifying state management.This statelessness allows predicates to be trivially processed in parallel, enabling a high degree of concurrency in transaction execution. Predicates facilitate the execution of multiple operations within a single transaction while ensuring that conflicts with other transactions are avoided. Predicates don’t maintain state information between executions, enabling efficient parallel processing and significantly boosting throughput. Fuel's unique architecture enables critical performance gains, powering scalable real-world decentralized applications.
 
-
 ## State Growth and Sustainability
 
 Blockchain growth inflates state size. State encompasses a blockchain's stored data: account balances, smart contract bytecode, and dApp interactions. Unchecked state growth explodes exponentially, threatening system stability. Every new transaction adds more data, and this accumulation increases the burden on node operators. As the state becomes larger, nodes must store and manage increasingly extensive amounts of data, leading to higher hardware requirements and potentially threatening decentralization.

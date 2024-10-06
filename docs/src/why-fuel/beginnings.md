@@ -22,7 +22,7 @@ We built Fuel to address this critical gap.
 
 In December 2020, Fuel emerged as the first optimistic rollup on Ethereum, with the launch of Fuel V1. We sought to create a trust-minimized sidechain that would inherit the security of Ethereum while introducing a radically redesigned execution model based on UTXOs, or Unspent Transaction Outputs.
 
-Fuel V1 garnered significant attention within the blockchain community from day one. Many regarded Fuel V1 as the one “pure” rollup, primarily due to its approach to security and execution. Unlike other architectures, Fuel V1 demonstrated security inheritance without relying on third-party multi-signatures or sacrificing the integrity of optimistic fraud proofs. 
+Fuel V1 garnered significant attention within the blockchain community from day one. Many regarded Fuel V1 as the one “pure” rollup, primarily due to its approach to security and execution. Unlike other architectures, Fuel V1 demonstrated security inheritance without relying on third-party multi-signatures or sacrificing the integrity of optimistic fraud proofs.
 
 [Vitalik's appreciation for Fuel.](https://x.com/vitalikbuterin/status/1838862177824051712?s=46&t=fyJoiPJn7gE_VIRS05WBaQ)
 
