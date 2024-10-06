@@ -1,6 +1,6 @@
 # Building on Fuel: An Overview
 
-Building on Fuel empowers developers to create high-performance, scalable decentralized applications with cutting-edge tools and infrastructure. Fuel’s architecture prioritizes speed, security, and developer productivity. This section outlines the core components of the Fuel ecosystem. We will explore each component in further detail in [Part 2](../architecture/index.md).
+Building on Fuel empowers developers to create high-performance, scalable decentralized applications with cutting-edge tools and infrastructure. Fuel’s architecture prioritizes speed, security, and developer productivity. This section outlines the core components of the Fuel ecosystem. We will explore each component in further detail in [Part 2](../the-architecture/index.md).
 
 ## The FuelVM (Fuel Virtual Machine)
 
