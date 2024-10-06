@@ -1,2 +1,25 @@
-# fuel-book
-Understanding the Fuel blockchain
+# Summary
+
+[Fuel Book](./docs/src/index.md)
+
+- [Chapter 1: Why Fuel](./docs/src/why-fuel/index.md)
+  - [1.1 - Beginnings](./docs/src/why-fuel/beginnings.md)
+  - [1.2 - The Problem](./docs/src/why-fuel/the-problem.md)
+  - [1.3 - The Fuel Way](./docs/src/why-fuel/the-fuel-way.md)
+  - [1.4 - So What is Fuel?](./docs/src/why-fuel/what-is-fuel.md)
+  - [1.5 - Building on Fuel: An Overview](./docs/src/why-fuel/building-on-fuel-an-overview.md)
+- [Chapter 2: The Architecture](./docs/src/the-architecture/index.md)
+  - [2.1 - The FuelVM](./docs/src/the-architecture/the-fuelvm.md)
+  - [2.2 - Transactions on Fuel](./docs/src/the-architecture/transactions-on-fuel.md)
+  - [2.3 - Fuel Blocks](./docs/src/the-architecture/fuel-blocks.md)
+  - [2.4 - Block Building in Fuel](./docs/src/the-architecture/block-building-in-fuel.md)
+  - [2.5 - Fuel and Ethereum](./docs/src/the-architecture/fuel-and-ethereum.md)
+  - [2.6 - Security on Fuel](./docs/src/the-architecture/security-on-fuel.md)
+- [Chapter 3: Fuel's Future](./docs/src/fuels-future/index.md)
+  - [3.1 - A Network of Interconnected L2s & L3s](./docs/src/fuels-future/network-of-interconnection.md)
+  - [3.2 - Decentralized Block Building](./docs/src/fuels-future/decentralized-block-building.md)
+  - [3.3 - SNAP Fast Finality Gadget](./docs/src/fuels-future/snap-fast-finality-gadget.md)
+  - [3.4 - State Rehydration](./docs/src/fuels-future/state-rehydration.md)
+  - [3.5 - Data Streaming](./docs/src/fuels-future/data-streaming.md)
+- [Conclusion](./docs/src/conclusion/index.md)
+- [Glossary](./docs/src/glossary/index.md)
