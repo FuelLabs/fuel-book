@@ -34,13 +34,16 @@ contractID
 CPUs
 Cryptocurrencies
 cryptographic
+customizable
 cypherpunk
 da
+dApp
 dApps
 DAs
 dataLength
 depositEth
 deterministically
+devs
 DEX
 DSL
 EIP
@@ -71,6 +74,7 @@ inputIndex
 InputMessage
 inputsCount
 integrations
+internet's
 interoperable
 interoperate
 interoperation
@@ -94,6 +98,7 @@ mult
 Multisig
 natively
 onboarding
+onchain
 OOB
 Orchestrator
 OuputVariable
@@ -159,6 +164,7 @@ sp
 SRC
 ssp
 stateful
+statelessly
 stateRoot
 storageSlots
 storageSlotsCount
@@ -168,6 +174,7 @@ Succinct's
 Succinct’s
 SVM
 toolchain
+toolset
 TPS
 TransactionCreate
 TransactionMint
@@ -182,6 +189,7 @@ TXPointer
 txPointer
 uint
 Unwritable
+upgradable
 upgradeable
 UpgradePurpose
 upgradePurpose
@@ -191,6 +199,7 @@ utxo
 UTXOs
 verifiability
 Vitalik
+Vitalik's
 VM
 vm
 VMs
