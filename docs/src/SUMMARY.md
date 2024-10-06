@@ -4,10 +4,10 @@
 
 - [Chapter 1: Why Fuel](./why-fuel/index.md)
   - [1.1 - Beginnings](./why-fuel/beginnings.md)
-  - [1.2 - The Problem](./why-fuel/problem.md)
-  - [1.3 - The Fuel Way](./why-fuel/fuel-way.md)
+  - [1.2 - The Problem](./why-fuel/the-problem.md)
+  - [1.3 - The Fuel Way](./why-fuel/the-fuel-way.md)
   - [1.4 - So What is Fuel?](./why-fuel/what-is-fuel.md)
-  - [1.5 - Building on Fuel: An Overview](./why-fuel/building-on-fuel-overview.md)
+  - [1.5 - Building on Fuel: An Overview](./why-fuel/building-on-fuel-an-overview.md)
 - [Chapter 2: The Architecture](./the-architecture/index.md)
   - [2.1 - The FuelVM](./the-architecture/the-fuelvm.md)
   - [2.2 - Transactions on Fuel](./the-architecture/transactions-on-fuel.md)
