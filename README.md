@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the Fuel Book, your comprehensive guide to Fuel. This book serves not only as a reference but also our motivations for building Fuel and the philosophies we have incorporated into it.
+Welcome to the Fuel Book, your comprehensive guide to Fuel. This book serves not only as a reference but also reflects our motivations for building Fuel and the philosophies we have incorporated into it.
 
 Our main goal is to dive deeper into the "why" behind Fuel, moving beyond just the technicalities to explore the foundational philosophies and inspirations that guide our work.
 
