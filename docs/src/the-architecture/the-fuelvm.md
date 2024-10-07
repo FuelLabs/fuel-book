@@ -28,7 +28,7 @@ Our tech leverages the UTXO model for performing transactions on Fuel. Transacti
 Addresses on Fuel own unspent coins, allowing them to spend and perform transactions through the FuelVM.
 
 <p align="center">
-  <img alt="2.1 UTXO Model and Parallelization" src="../../../assets/2.1-utxo-model-and-parallelization.png" />
+  <img alt="2.1 UTXO Model and Parallelization" src="../../public/2.1-utxo-model-and-parallelization.png" />
 </p>
 
 Using the UTXO model helps achieve transaction parallelization. At runtime, users provide the inputs and outputs for their transaction. Transactions without overlap process in parallel, enabling Fuel to scale horizontally with the number of cores per machine.
@@ -81,9 +81,9 @@ Each byte allocation on the Stack increases the stack index by 1, and each byte 
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-memory-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-memory-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 FuelVM Memory" src="../../../assets/2.1-memory-light.png">
+        <img alt="2.1 FuelVM Memory" src="../../public/2.1-memory-light.png">
     </picture>
 </p>
 
@@ -147,9 +147,9 @@ Fuel transactions provide `predicateGasUsed` for each predicate used. During ver
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-predicate-estimation-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-predicate-estimation-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 Predicate Estimation" src="../../../assets/2.1-predicate-estimation-light.png">
+        <img alt="2.1 Predicate Estimation" src="../../public/2.1-predicate-estimation-light.png">
     </picture>
 </p>
 
@@ -164,9 +164,9 @@ All predicate parts of the transaction are verified to return true before execut
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-predicate-verification-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-predicate-verification-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 Predicate Verification" src="../../../assets/2.1-predicate-verification-light.png">
+        <img alt="2.1 Predicate Verification" src="../../public/2.1-predicate-verification-light.png">
     </picture>
 </p>
 
@@ -179,9 +179,9 @@ After verifying all predicates, the transaction script is executed; the script e
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-script-execution-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-script-execution-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 Script Execution" src="../../../assets/2.1-script-execution-light.png">
+        <img alt="2.1 Script Execution" src="../../public/2.1-script-execution-light.png">
     </picture>
 </p>
 
@@ -197,9 +197,9 @@ Call context is created by either:
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-call-context-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-call-context-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 Call Context" src="../../../assets/2.1-call-context-light.png">
+        <img alt="2.1 Call Context" src="../../public/2.1-call-context-light.png">
     </picture>
 </p>
 
@@ -237,9 +237,9 @@ Any attempt to read from the region between the highest ever `$sp` during the co
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-memory-read-policies-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-memory-read-policies-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 Memory Read Policies" src="../../../assets/2.1-memory-read-policies-light.png">
+        <img alt="2.1 Memory Read Policies" src="../../public/2.1-memory-read-policies-light.png">
     </picture>
 </p>
 
@@ -256,9 +256,9 @@ Before writing to this memory region, allocate the bytes first. In the case of a
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-memory-write-policies-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.1-memory-write-policies-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.1 Memory Write Policies" src="../../../assets/2.1-memory-write-policies-light.png">
+        <img alt="2.1 Memory Write Policies" src="../../public/2.1-memory-write-policies-light.png">
     </picture>
 </p>
 

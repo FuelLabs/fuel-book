@@ -25,9 +25,9 @@ Ethereum is one of the most decentralized L2s. Ethereum has a long-standing pres
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.5-fuel-and-ethereum-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.5-fuel-and-ethereum-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.5 Fuel and Ethereum" src="../../../assets/2.5-fuel-and-ethereum-light.png">
+        <img alt="2.5 Fuel and Ethereum" src="../../public/2.5-fuel-and-ethereum-light.png">
     </picture>
 </p>
 
@@ -60,9 +60,9 @@ As discussed in the section on block building, part of processing the Fuel block
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.5-l1-l2-messaging-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.5-l1-l2-messaging-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.5 L1 → L2 Messaging" src="../../../assets/2.5-l1-l2-messaging-light.png">
+        <img alt="2.5 L1 → L2 Messaging" src="../../public/2.5-l1-l2-messaging-light.png">
     </picture>
 </p>
 
@@ -75,9 +75,9 @@ Fuel also allows messages from the L2 -> L1 to be sent using [MessageOut](https:
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.5-l2-l1-messaging-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.5-l2-l1-messaging-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.5 L2 → L1 Messaging" src="../../../assets/2.5-l2-l1-messaging-light.png">
+        <img alt="2.5 L2 → L1 Messaging" src="../../public/2.5-l2-l1-messaging-light.png">
     </picture>
 </p>
 

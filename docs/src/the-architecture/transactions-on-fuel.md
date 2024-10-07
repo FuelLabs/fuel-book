@@ -25,9 +25,9 @@ In Fuel, addresses can own native assets and spend coins with transactions. Fuel
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-types-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-transaction-types-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Types" src="../../../assets/2.2-transaction-types-light.png">
+        <img alt="2.2 Transaction Types" src="../../public/2.2-transaction-types-light.png">
     </picture>
 </p>
 
@@ -57,9 +57,9 @@ Users can own various denominations of certain assets in different numbers of Co
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-input-coins-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-input-coins-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Input Coins" src="../../../assets/2.2-input-coins-light.png">
+        <img alt="2.2 Input Coins" src="../../public/2.2-input-coins-light.png">
     </picture>
 </p>
 
@@ -99,9 +99,9 @@ Contracts have persistent storage and can own native assets. Users consume contr
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-input-contracts-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-input-contracts-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 FuelVM Memory" src="../../../assets/2.2-input-contracts-light.png">
+        <img alt="2.2 FuelVM Memory" src="../../public/2.2-input-contracts-light.png">
     </picture>
 </p>
 
@@ -129,9 +129,9 @@ The Block Builder creates messages created as part of sending messages from the 
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-input-messages-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-input-messages-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Input Messages" src="../../../assets/2.2-input-messages-light.png">
+        <img alt="2.2 Input Messages" src="../../public/2.2-input-messages-light.png">
     </picture>
 </p>
 
@@ -201,9 +201,9 @@ Output Coins are new coins sent to a Fuel Address, which become spendable as Inp
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-coin-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-output-coin-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Output Coin" src="../../../assets/2.2-output-coin-light.png">
+        <img alt="2.2 Output Coin" src="../../public/2.2-output-coin-light.png">
     </picture>
 </p>
 
@@ -218,9 +218,9 @@ OutputContracts are newly generated contract outputs that become available as In
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-contract-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-output-contract-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Output Contract" src="../../../assets/2.2-output-contract-light.png">
+        <img alt="2.2 Output Contract" src="../../public/2.2-output-contract-light.png">
     </picture>
 </p>
 
@@ -241,9 +241,9 @@ For example, an OutputChange can collect any ETH not spent as gas or any USDC no
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-change-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-output-change-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Output Change" src="../../../assets/2.2-output-change-light.png">
+        <img alt="2.2 Output Change" src="../../public/2.2-output-change-light.png">
     </picture>
 </p>
 
@@ -266,9 +266,9 @@ OutputVariable acts as a placeholder for coins created in the execution of scrip
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-variable-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-output-variable-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Output Variable" src="../../../assets/2.2-output-variable-light.png">
+        <img alt="2.2 Output Variable" src="../../public/2.2-output-variable-light.png">
     </picture>
 </p>
 
@@ -349,9 +349,9 @@ The contract ID of smart contracts on Fuel is calculated deterministically, and 
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-create-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-transaction-create-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Create" src="../../../assets/2.2-transaction-create-light.png">
+        <img alt="2.2 Transaction Create" src="../../public/2.2-transaction-create-light.png">
     </picture>
 </p>
 
@@ -379,9 +379,9 @@ The block producer uses this transaction to mint new assets. It doesn’t requir
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-mint-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-transaction-mint-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Mint" src="../../../assets/2.2-transaction-mint-light.png">
+        <img alt="2.2 Transaction Mint" src="../../public/2.2-transaction-mint-light.png">
     </picture>
 </p>
 
@@ -409,9 +409,9 @@ Therefore, at any given moment, a TransactionUpgrade might attempt to perform on
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-upgrade-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-transaction-upgrade-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Upgrade" src="../../../assets/2.2-transaction-upgrade-light.png">
+        <img alt="2.2 Transaction Upgrade" src="../../public/2.2-transaction-upgrade-light.png">
     </picture>
 </p>
 
@@ -438,9 +438,9 @@ On successful upload of all subsections, the transaction reaches completion, and
 <p align="center">
     <picture>
         <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-upload-dark.png">
+        <source media="(prefers-color-scheme: dark)" srcset="../../public/2.2-transaction-upload-dark.png">
         <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Upload" src="../../../assets/2.2-transaction-upload-light.png">
+        <img alt="2.2 Transaction Upload" src="../../public/2.2-transaction-upload-light.png">
     </picture>
 </p>
 
