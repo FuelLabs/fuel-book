@@ -22,14 +22,7 @@ Fuel Ignition uses Ethereum as a Layer 1. We chose Ethereum as Fuel’s L1 for b
 
 Ethereum is one of the most decentralized L2s. Ethereum has a long-standing presence and has focused on a rollup-centric roadmap for years. These factors make it the ideal foundation for building a rollup.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.5-fuel-and-ethereum-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.5 Fuel and Ethereum" src="../../../assets/2.5-fuel-and-ethereum-light.png">
-    </picture>
-</p>
+![2.5 Fuel and Ethereum](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.5-fuel-and-ethereum-light.png)
 
 ## Inheriting Ethereum’s Security
 
@@ -57,14 +50,7 @@ The [Fuel Message Portal](https://github.com/FuelLabs/fuel-bridge/blob/main/pack
 
 As discussed in the section on block building, part of processing the Fuel blocks requires committing to some L1 block height, up to which the block builder processes messages and transactions, this forces the Block builder to include all messages from the L1 (as in case of failure, the builder can be slashed).
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.5-l1-l2-messaging-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.5 L1 → L2 Messaging" src="../../../assets/2.5-l1-l2-messaging-light.png">
-    </picture>
-</p>
+![2.5 L1 → L2 Messaging](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.5-l1-l2-messaging-light.png)
 
 As part of processing the message blocks from the L1, the block builder looks at the event and mints an OutputMessage transaction to the particular Fuel address with the specific data.
 
@@ -72,14 +58,7 @@ As part of processing the message blocks from the L1, the block builder looks at
 
 Fuel also allows messages from the L2 -> L1 to be sent using [MessageOut](https://github.com/FuelLabs/fuel-specs/blob/master/src/abi/receipts.md#messageout-receipt) receipts. Every Fuel block includes a receipt root, the root of all receipts that were part of the block. This allows anyone to make a call to the [relayMessage](https://github.com/FuelLabs/fuel-bridge/blob/6030a40ce9c58a533c09f73e837f85ab4784ef58/packages/solidity-contracts/contracts/fuelchain/FuelMessagePortal.sol#L188) function of the Fuel Message Portal; a Merkle proof of inclusion is required to perform for the message you are trying to process along with that, it checks whether the block for which the message is being processed has been finalized or not (i.e., it outside of the challenge window).
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.5-l2-l1-messaging-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.5 L2 → L1 Messaging" src="../../../assets/2.5-l2-l1-messaging-light.png">
-    </picture>
-</p>
+![2.5 L2 → L1 Messaging](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.5-l2-l1-messaging-light.png)
 
 Processing the message on the L1 coming from the L2 is done by calling the specific L1 address to which the message is sent to with some desired payload.
 

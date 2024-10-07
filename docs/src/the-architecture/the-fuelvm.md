@@ -27,9 +27,7 @@ Our tech leverages the UTXO model for performing transactions on Fuel. Transacti
 
 Addresses on Fuel own unspent coins, allowing them to spend and perform transactions through the FuelVM.
 
-<p align="center">
-  <img alt="2.1 UTXO Model and Parallelization" src="../../../assets/2.1-utxo-model-and-parallelization.png" />
-</p>
+![2.1 UTXO Model and Parallelization](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-utxo-model-and-parallelization.png)
 
 Using the UTXO model helps achieve transaction parallelization. At runtime, users provide the inputs and outputs for their transaction. Transactions without overlap process in parallel, enabling Fuel to scale horizontally with the number of cores per machine.
 
@@ -78,14 +76,7 @@ Memory follows a stack and heap model. The stack begins from the left, immediate
 
 Each byte allocation on the Stack increases the stack index by 1, and each byte allocation on the heap decreases its writable index by 1. Hence, the stack grows upwards, and the heap grows downwards.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-memory-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 FuelVM Memory" src="../../../assets/2.1-memory-light.png">
-    </picture>
-</p>
+![2.1 FuelVM Memory](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-memory-light.png)
 
 The stack and the heap have the following essential registers associated with them:
 
@@ -144,14 +135,7 @@ The first three are called External contexts, as the `$fp` is zero, while Calls 
 
 Fuel transactions provide `predicateGasUsed` for each predicate used. During verification, if predicateGasUsed is less than the total gas consumed during verification, the transaction reverts.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-predicate-estimation-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 Predicate Estimation" src="../../../assets/2.1-predicate-estimation-light.png">
-    </picture>
-</p>
+![2.1 Predicate Estimation](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-predicate-estimation-light.png)
 
 The user performs Predictive Estimation locally or by calling a remote full node, which executes the predicate in the FuelVM and returns the total gas consumed.
 
@@ -161,14 +145,7 @@ Predicate estimation context cannot do persistent storage or make calls to Contr
 
 All predicate parts of the transaction are verified to return true before executing the transaction script. The FuelVM is used in the Predicate Verification context when verifying a transaction's predicates.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-predicate-verification-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 Predicate Verification" src="../../../assets/2.1-predicate-verification-light.png">
-    </picture>
-</p>
+![2.1 Predicate Verification](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-predicate-verification-light.png)
 
 Predicate verification context cannot do persistent storage or make calls to contracts.
 
@@ -176,14 +153,7 @@ Predicate verification context cannot do persistent storage or make calls to con
 
 After verifying all predicates, the transaction script is executed; the script execution context cannot do persistent storage but can make calls to contract.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-script-execution-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 Script Execution" src="../../../assets/2.1-script-execution-light.png">
-    </picture>
-</p>
+![2.1 Script Execution](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-script-execution-light.png)
 
 ### Calls
 
@@ -194,14 +164,7 @@ Call context is created by either:
 1. Script calling a smart contract
 2. Contract calling a contract input
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-call-context-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 Call Context" src="../../../assets/2.1-call-context-light.png">
-    </picture>
-</p>
+![2.1 Call Context](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-call-context-light.png)
 
 Each call creates a “Call Frame”, which is pushed to the Stack. A call frame holds metadata on the stack, aiding the execution of the call context in the FuelVM. A call context cannot mutate the caller's state and only access its stack and heap.
 
@@ -234,14 +197,7 @@ A context can read any data from the stack in the range from the byte at index `
 
 Any attempt to read from the region between the highest ever `$sp` during the context execution and the current `$hp` will return an error.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-memory-read-policies-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 Memory Read Policies" src="../../../assets/2.1-memory-read-policies-light.png">
-    </picture>
-</p>
+![2.1 Memory Read Policies](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-memory-read-policies-light.png)
 
 What do we mean by the highest ever `$sp`?
 
@@ -253,14 +209,7 @@ A given context can write to any region between its `$ssp` and current `$hp`; he
 
 Before writing to this memory region, allocate the bytes first. In the case of a stack, this is done using `CFE` and `CFEI` opcodes, while in the case of the heap, it is done via `an ALOC` opcode.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.1-memory-write-policies-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.1 Memory Write Policies" src="../../../assets/2.1-memory-write-policies-light.png">
-    </picture>
-</p>
+![2.1 Memory Write Policies](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-memory-write-policies-light.png)
 
 Note: Remember that once a context completes, all values on the stack (i.e., the call frame and all values allocated on the stack during execution ) are wiped down. Still, heap allocation stays, and the following context can only write data below the `$hp` of the existing context.
 

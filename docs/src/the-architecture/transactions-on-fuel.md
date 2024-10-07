@@ -22,14 +22,7 @@ In Fuel, addresses can own native assets and spend coins with transactions. Fuel
 4. Upgrade
 5. Upload
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-types-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Types" src="../../../assets/2.2-transaction-types-light.png">
-    </picture>
-</p>
+![2.2 Transaction Types](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-transaction-types-light.png)
 
 Fuel uses the UTXO model for transactions, introducing specific constructs we'll explore before examining the various transaction types:
 
@@ -54,14 +47,7 @@ Coins are units for some asset that a user can spend as part of the transaction.
 
 Users can own various denominations of certain assets in different numbers of Coins. For example, a Fuel address A can have a balance of some asset 100, with four coins of 25 denominations each, and some address B can have a balance of 100 for the same asset, but three coins of denomination 10, 40, 50.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-input-coins-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Input Coins" src="../../../assets/2.2-input-coins-light.png">
-    </picture>
-</p>
+![2.2 Input Coins](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-input-coins-light.png)
 
 An Input Coin has the following parameters attached:
 
@@ -96,14 +82,7 @@ Many incorrectly attribute Bitcoin's limitations to its UTXO model. However, the
 
 Contracts have persistent storage and can own native assets. Users consume contracts by using the contracts as input for transactions. Then, users can call various external functions attached to contracts via the ephemeral script attached to the transaction.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-input-contracts-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 FuelVM Memory" src="../../../assets/2.2-input-contracts-light.png">
-    </picture>
-</p>
+![2.2 Input Contracts](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-input-contracts-light.png)
 
 | name        | type      | description                                                             |
 |-------------|-----------|-------------------------------------------------------------------------|
@@ -126,14 +105,7 @@ The Block Builder creates messages created as part of sending messages from the 
 
 **NOTE:** An Input Message can only be consumed as an Input as part of a transaction, and is then destroyed from the UTXO set.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-input-messages-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Input Messages" src="../../../assets/2.2-input-messages-light.png">
-    </picture>
-</p>
+![2.2 Input Messages](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-input-messages-light.png)
 
 A fuel InputMessage consists of the following parameters:
 
@@ -198,14 +170,7 @@ Output Coins are new coins sent to a Fuel Address, which become spendable as Inp
 | amount   | uint64   | Amount of coins to send.             |
 | asset_id | byte[32] | Asset ID of coins.                   |
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-coin-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Output Coin" src="../../../assets/2.2-output-coin-light.png">
-    </picture>
-</p>
+![2.2 Output Coins](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-output-coin-light.png)
 
 The transaction invalidity rules for this output type can be seen [here](https://docs.fuel.network/docs/specs/tx-format/output/#outputcoin).
 
@@ -215,14 +180,7 @@ OutputContracts are newly generated contract outputs that become available as In
 
 **NOTE:** Every InputContract part of the transaction must always have a corresponding Output Contract.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-contract-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Output Contract" src="../../../assets/2.2-output-contract-light.png">
-    </picture>
-</p>
+![2.2 Output Contract](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-output-contract-light.png)
 
 |     name    |   type   |                               description                              |
 |:-----------:|:--------:|:----------------------------------------------------------------------:|
@@ -238,14 +196,7 @@ An OutputChange, included as one of our outputs for a specific assetId, enables 
 
 For example, an OutputChange can collect any ETH not spent as gas or any USDC not swapped as part of a DEX transaction.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-change-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Output Change" src="../../../assets/2.2-output-change-light.png">
-    </picture>
-</p>
+![2.2 Output Change](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-output-change-light.png)
 
 **NOTE:** There can only be one OutputChange per `asset_id in a transaction`.
 
@@ -263,14 +214,7 @@ OutputVariable acts as a placeholder for coins created in the execution of scrip
 
 **NOTE:** This means every transaction using mint internally will need an OutputVariable for that particular assetID.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-output-variable-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Output Variable" src="../../../assets/2.2-output-variable-light.png">
-    </picture>
-</p>
+![2.2 Output Variable](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-output-variable-light.png)
 
 Consider a scenario where a contract transfers its output coin to a user only upon receiving a correct value. In this case, we can utilize a variable output at the end of the transaction. This output may or may not have a value attached to it, depending on whether the condition is met and have an arbitrary owner.
 
@@ -346,14 +290,7 @@ TransactionCreate is used to create new contracts; the parameters allow for cont
 
 The contract ID of smart contracts on Fuel is calculated deterministically, and the calculation mechanism is referred to [here](https://docs.fuel.network/docs/specs/identifiers/contract-id/).
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-create-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Create" src="../../../assets/2.2-transaction-create-light.png">
-    </picture>
-</p>
+![2.2 Transaction Create](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-transaction-create-light.png)
 
 |         name         |          type          |                    description                    |
 |:--------------------:|:----------------------:|:-------------------------------------------------:|
@@ -376,14 +313,7 @@ The transaction invalidity rules for this transaction type can be seen [here](ht
 
 The block producer uses this transaction to mint new assets. It doesn’t require a signature. The transaction is currently used to create the block producer's fees. The last transaction in the blocks is a Coinbase transaction, allowing the block producer to collect fees for building the block.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-mint-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Mint" src="../../../assets/2.2-transaction-mint-light.png">
-    </picture>
-</p>
+![2.2 Transaction Mint](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-transaction-mint-light.png)
 
 |      name      |      type      |                                 description                                |
 |:--------------:|:--------------:|:--------------------------------------------------------------------------:|
@@ -406,14 +336,7 @@ Therefore, at any given moment, a TransactionUpgrade might attempt to perform on
 
 - Trying to upgrade the state transition function
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-upgrade-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Upgrade" src="../../../assets/2.2-transaction-upgrade-light.png">
-    </picture>
-</p>
+![2.2 Transaction Upgrade](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-transaction-upgrade-light.png)
 
 |      name      |      type      |           description          |
 |:--------------:|:--------------:|:------------------------------:|
@@ -435,14 +358,7 @@ Before performing an upgrade, operators must upload the Fuel state transition by
 
 On successful upload of all subsections, the transaction reaches completion, and the system adopts the new bytecode.
 
-<p align="center">
-    <picture>
-        <!-- Image for dark mode -->
-        <source media="(prefers-color-scheme: dark)" srcset="../../../assets/2.2-transaction-upload-dark.png">
-        <!-- Default image (light mode) -->
-        <img alt="2.2 Transaction Upload" src="../../../assets/2.2-transaction-upload-light.png">
-    </picture>
-</p>
+![2.2 Transaction Upload](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.2-transaction-upload-light.png)
 
 <!-- markdownlint-disable MD052 -->
 |        name       |    type    |                                      description                                      |
