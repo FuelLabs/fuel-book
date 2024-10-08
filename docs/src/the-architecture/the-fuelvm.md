@@ -27,7 +27,7 @@ Our tech leverages the UTXO model for performing transactions on Fuel. Transacti
 
 Addresses on Fuel own unspent coins, allowing them to spend and perform transactions through the FuelVM.
 
-![2.1 UTXO Model and Parallelization](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-utxo-model-and-parallelization.png)
+![2.1 UTXO Model and Parallelization](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.1-utxo-model-and-parallelization-light.png)
 
 Using the UTXO model helps achieve transaction parallelization. At runtime, users provide the inputs and outputs for their transaction. Transactions without overlap process in parallel, enabling Fuel to scale horizontally with the number of cores per machine.
 
