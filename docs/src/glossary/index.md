@@ -1,10 +1,22 @@
 # Glossary
 
+**Blockchain:**
+A decentralized and distributed digital ledger used to record transactions across multiple computers, ensuring the integrity and immutability of data.
+
+**Bridges:**
+Protocols that allow assets to be transferred between different blockchains or Layer 2 networks, ensuring interoperability.
+
+**Consensus Mechanism:**
+The protocol that ensures all nodes in a blockchain network agree on the current state of the ledger, such as Proof of Work (PoW) or Proof of Stake (PoS).
+
 **Contract:** Primitives allowing for building stateful applications on Fuel, facilitates complex stateful applications like AMMs, Vaults, etc.
 
 **Context:** Provides policies that determine what features can some running FuelVM bytecode use, for example the ability to call smart contracts, use persistent storage, etc.
 
 **Cryptography:** The practice of securing information and communications through mathematical techniques, ensuring data confidentiality, integrity, and authenticity in blockchain systems.
+
+**Decentralized Application (dApp):**
+An application that runs on a decentralized network such as Ethereum, utilizing smart contracts and blockchain technology.
 
 **Ephemeral scripting:** Scripts or code that are temporary and designed for short-term, single-use purposes. These scripts are typically used for tasks that do not require persistent state or long-term execution and are often discarded or removed after they fulfill their function.
 
