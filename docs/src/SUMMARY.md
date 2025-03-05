@@ -15,6 +15,7 @@
   - [2.4 - Block Building in Fuel](./the-architecture/block-building-in-fuel.md)
   - [2.5 - Fuel and Ethereum](./the-architecture/fuel-and-ethereum.md)
   - [2.6 - Security on Fuel](./the-architecture/security-on-fuel.md)
+  - [2.7 - Transactions on Fuel](./the-architecture/transactions-on-fuel.md)
 - [Chapter 3: Fuel's Future](./fuels-future/index.md)
   - [3.1 - A Network of Interconnected L2s & L3s](./fuels-future/network-of-interconnection.md)
   - [3.2 - Decentralized Block Building](./fuels-future/decentralized-block-building.md)
