@@ -213,3 +213,14 @@ zk
 ZK
 zkVMs
 zstd
+incentivization
+incentivize
+maxFee
+gwei
+incentivized
+UnspentGas
+bn
+TypeScript
+incentivizing
+validators
+incentivizes

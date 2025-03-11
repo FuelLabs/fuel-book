@@ -6,3 +6,4 @@
 - [2.4 - Block Building in Fuel](./block-building-in-fuel.md)
 - [2.5 - Fuel and Ethereum](./fuel-and-ethereum.md)
 - [2.6 - Security on Fuel](./security-on-fuel.md)
+- [2.7 - Fees on Fuel](./fees-on-fuel.md)
