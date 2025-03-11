@@ -1,0 +1,13 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "x\\.com"
+        },
+        {
+            "pattern": "etherscan\\.io"
+        },
+        {
+            "pattern": "sepolia\\.etherscan\\.io"
+        }
+    ]
+}
