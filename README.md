@@ -31,6 +31,7 @@ We recognize that our audience encompasses developers, researchers, and blockcha
   - [2.4 - Block Building in Fuel](./docs/src/the-architecture/block-building-in-fuel.md)
   - [2.5 - Fuel and Ethereum](./docs/src/the-architecture/fuel-and-ethereum.md)
   - [2.6 - Security on Fuel](./docs/src/the-architecture/security-on-fuel.md)
+  - [2.7 - Transactions on Fuel](./docs/src/the-architecture/transactions-on-fuel.md)
 - [Chapter 3: Fuel's Future](./docs/src/fuels-future/index.md)
   - [3.1 - A Network of Interconnected L2s & L3s](./docs/src/fuels-future/network-of-interconnection.md)
   - [3.2 - Decentralized Block Building](./docs/src/fuels-future/decentralized-block-building.md)
