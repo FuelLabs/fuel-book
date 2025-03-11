@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
       "lint:check": "markdownlint --config .markdownlint.yaml docs/**/*",
-      "lint:fix": "markdownlint --config .markdownlint.yaml 'breaking-changes-log.md' --fix"
+      "lint:fix": "markdownlint --config .markdownlint.yaml docs/**/* --fix"
     },
     "keywords": [],
     "author": "",
