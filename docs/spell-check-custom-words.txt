@@ -223,3 +223,4 @@ bn
 TypeScript
 incentivizing
 validators
+incentivizes
