@@ -20,7 +20,7 @@ Fuel’s transaction model also solves concurrency issues seen in other UTXO-bas
 
 ## Fuel Ignition (Rollup)
 
-Fuel Ignition will be the first Fuel V2 rollup to go live on Ethereum Mainnet. It aims to surpass traditional EVM rollups by delivering a vastly improved execution design. Initially starting as a more trustful Layer-2, Ignition’s ultimate goal is to evolve into a fully Ethereum-secured rollup with fraud proving, decentralized sequencing, and secure upgrades via a delayed multi-signature process.
+Fuel Ignition is the first Fuel V2 rollup to go live on Ethereum Mainnet. It aims to surpass traditional EVM rollups by delivering a vastly improved execution design. Initially starting as a more trustful Layer-2, Ignition’s ultimate goal is to evolve into a fully Ethereum-secured rollup with fraud proving, decentralized sequencing, and secure upgrades via a delayed multi-signature process.
 
 Ignition’s focus on leveraging Ethereum’s security ensures that developers can build high-performance applications while benefiting from the strong security guarantees Ethereum offers. As Ignition develops, it will incorporate decentralized sequencing and Ethereum-based data availability (DA), further enhancing its trustless, scalable design.
 

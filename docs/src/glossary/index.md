@@ -14,7 +14,7 @@
 
 **Forc:** A command-line toolchain that serves as the backbone of Fuel development. It supports everything from compiling Sway smart contracts to managing dependencies and deploying applications.
 
-**Fuel Ignition:** Will be the first Fuel V2 rollup to go live on Ethereum Mainnet. It aims to surpass traditional EVM rollups by delivering a vastly improved execution design.
+**Fuel Ignition:** The first Fuel V2 rollup to go live on Ethereum Mainnet. It aims to surpass traditional EVM rollups by delivering a vastly improved execution design.
 
 **Fuel Rust SDK:** A developer tool that allows developers to interact with Fuel’s blockchain using the Rust programming language. It offers a seamless experience for creating system-level applications and managing interactions with the Fuel Network.
 

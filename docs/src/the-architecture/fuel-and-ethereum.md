@@ -4,7 +4,7 @@ Highlights:
 
 - Fuel Ignition leverages Ethereum as its Layer 1 for settlement and data availability, aligning with Ethereum's core values of sustainability, security, and accessibility for everyday users. This choice emphasizes Fuel's commitment to building a long-term, decentralized ecosystem.
 
-- By utilizing one of the most established and decentralized Layer 1 networks, Ethereum provides a robust foundation for Fuel’s rollup, ensuring reliable performance and security. Fuel's rollup inherits Ethereum's security model, which safeguards user funds and enables fraud-proof mechanisms directly on the Ethereum blockchain.
+- Being one of the most established and decentralized Layer 1 networks, Ethereum provides a robust foundation for Fuel’s rollup, ensuring reliable performance and security. Fuel's rollup inherits Ethereum's security model, which safeguards user funds and enables fraud-proof mechanisms directly on the Ethereum blockchain.
 
 - Fuel allows seamless messaging between Layer 1 and Layer 2, ensuring that any message sent to Ethereum must be processed on Fuel and vice versa. This capability enhances user experience and guarantees censorship resistance.
 
@@ -20,7 +20,7 @@ Fuel Ignition uses Ethereum as a Layer 1. We chose Ethereum as Fuel’s L1 for b
 
 - Focus on consumer hardware and making participation in the protocol accessible  for ordinary people
 
-Ethereum is one of the most decentralized L2s. Ethereum has a long-standing presence and has focused on a rollup-centric roadmap for years. These factors make it the ideal foundation for building a rollup.
+Ethereum is one of the most decentralized L1s. Ethereum has a long-standing presence and has focused on a rollup-centric roadmap for years. These factors make it the ideal foundation for building a rollup.
 
 ![2.5 Fuel and Ethereum](https://raw.githubusercontent.com/FuelLabs/fuel-book/refs/heads/main/assets/2.5-fuel-and-ethereum-light.png)
 
