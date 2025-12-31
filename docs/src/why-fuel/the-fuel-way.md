@@ -20,7 +20,7 @@ Fuel aims to pull the blockchain space back from this creeping centralization, b
 
 ## Blockchains are not Computers
 
-Advancing blockchain technology demands more than incremental upgrades. True innovation often requires revolutionary action– including breaking changes. Fuel envisions revolutionizing both blockchain architecture and application development to unlock the technology's full potential.Traditional smart-contract platforms mimic computer systems, with blockchains serving as hardware and smart contracts as software. These contracts execute read and write operations, storing data to the chain's state—effectively treating it as a global Postgres database.
+Advancing blockchain technology demands more than incremental upgrades. True innovation often requires revolutionary action– including breaking changes. Fuel envisions revolutionizing both blockchain architecture and application development to unlock the technology's full potential. Traditional smart-contract platforms mimic computer systems, with blockchains serving as hardware and smart contracts as software. These contracts execute read and write operations, storing data to the chain's state—effectively treating it as a global Postgres database.
 
 Fuel believes that blockchains are not simply scaled-up abstract mainframes but a different kind of computer—"trust machines." These machines are still programmable, but they operate under vastly different constraints than traditional execution environments. The role of a blockchain node is not to act as a cloud server but to verify the current state of the chain and all future state transitions with trustless integrity.
 
